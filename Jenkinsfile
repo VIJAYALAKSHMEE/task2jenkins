@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "my-app"
-        DOCKER_HUB_REPO = "vijayalakshmee/task2jenkins" // ✅ Corrected username
+        DOCKER_HUB_REPO = "vijayalakshmee/my-app" // ✅ Corrected username
         DOCKER_REGISTRY_CREDENTIALS = "docker"
     }
 
