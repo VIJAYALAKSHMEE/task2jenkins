@@ -25,7 +25,7 @@ pipeline {
         stage('Push Image to Docker Hub') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: DOCKER_REGISTRY_CREDENTIALS, url: '') {
+                    withDockerRegistry(credentialsId: docker, url: '') {
                         sh "docker push ${DOCKER_HUB_REPO}:${BUILD_NUMBER}"
                     }
                 }
