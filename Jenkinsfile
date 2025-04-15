@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "my-app"
         DOCKER_HUB_REPO = "rajitha390/my-app" // ✅ Corrected username
-        DOCKER_REGISTRY_CREDENTIALS = "docker-credentials"
+        DOCKER_REGISTRY_CREDENTIALS = "docker"
     }
 
     stages {
